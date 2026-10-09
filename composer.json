@@ -1,0 +1,36 @@
+{
+    "name": "hasan-22/torob_pay",
+    "description": "Torob Pay integration for Laravel",
+    "keywords": [
+        "laravel",
+        "torobpay",
+        "payment"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/HASSAN-22/torob-pay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HASSAN-22",
+            "email": "armiaevil@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TorobPay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TorobPay\\TorobPayServiceProvider"
+            ],
+            "aliases": {
+                "TorobPay": "TorobPay\\Facades\\TorobPay"
+            }
+        }
+    }
+}
